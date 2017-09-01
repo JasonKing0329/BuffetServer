@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>com.app.buffet.TestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DocVersionServlet</servlet-name>
+        <servlet-class>com.app.buffet.DocVersionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DocVersionServlet</servlet-name>
+        <url-pattern>/docversion</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ItemClassServlet</servlet-name>
+        <servlet-class>com.app.buffet.ItemClassServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ItemClassServlet</servlet-name>
+        <url-pattern>/itemclasslist</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ItemServlet</servlet-name>
+        <servlet-class>com.app.buffet.ItemServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ItemServlet</servlet-name>
+        <url-pattern>/itemlist</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ItemSizeServlet</servlet-name>
+        <servlet-class>com.app.buffet.ItemSizeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ItemSizeServlet</servlet-name>
+        <url-pattern>/itemsizelist</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MethodServlet</servlet-name>
+        <servlet-class>com.app.buffet.MethodServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MethodServlet</servlet-name>
+        <url-pattern>/methodlist</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SetmealServlet</servlet-name>
+        <servlet-class>com.app.buffet.SetmealServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetmealServlet</servlet-name>
+        <url-pattern>/setmeallist</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdvImageServlet</servlet-name>
+        <servlet-class>com.app.buffet.AdvImageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdvImageServlet</servlet-name>
+        <url-pattern>/advimages</url-pattern>
+    </servlet-mapping>
+</web-app>
