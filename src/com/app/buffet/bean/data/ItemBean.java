@@ -35,7 +35,7 @@ public class ItemBean extends BaseHttpData {
      * 不限售-1
      */
     @SerializedName("sellLimit")
-    private double sellLimit;
+    private double sellLimit = -1;
 
     /**
      * 沽清 0否 1是

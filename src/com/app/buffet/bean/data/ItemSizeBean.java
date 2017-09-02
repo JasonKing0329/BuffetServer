@@ -30,6 +30,12 @@ public class ItemSizeBean extends BaseHttpData {
     @SerializedName("sequence")
     private int sequence;
 
+    @SerializedName("sellout")
+    private int sellout;
+
+    @SerializedName("limit")
+    private double limit = -1;
+
     public long getId() {
         return id;
     }
@@ -76,5 +82,21 @@ public class ItemSizeBean extends BaseHttpData {
 
     public void setSequence(int sequence) {
         this.sequence = sequence;
+    }
+
+    public int getSellout() {
+        return sellout;
+    }
+
+    public void setSellout(int sellout) {
+        this.sellout = sellout;
+    }
+
+    public double getLimit() {
+        return limit;
+    }
+
+    public void setLimit(double limit) {
+        this.limit = limit;
     }
 }

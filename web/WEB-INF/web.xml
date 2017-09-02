@@ -74,4 +74,13 @@
         <servlet-name>AdvImageServlet</servlet-name>
         <url-pattern>/advimages</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ItemUpdateServlet</servlet-name>
+        <servlet-class>com.app.buffet.ItemUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ItemUpdateServlet</servlet-name>
+        <url-pattern>/itemupdate</url-pattern>
+    </servlet-mapping>
 </web-app>
