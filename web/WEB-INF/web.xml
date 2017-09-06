@@ -13,6 +13,24 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>BaseUrlServlet</servlet-name>
+        <servlet-class>com.app.buffet.BaseUrlServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BaseUrlServlet</servlet-name>
+        <url-pattern>/buffet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BasicDataServlet</servlet-name>
+        <servlet-class>com.app.buffet.BasicDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BasicDataServlet</servlet-name>
+        <url-pattern>/link</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>DocVersionServlet</servlet-name>
         <servlet-class>com.app.buffet.DocVersionServlet</servlet-class>
     </servlet>

@@ -34,8 +34,9 @@ public class ItemServlet extends BaseJsonServlet<BaseRequest, BuffetResponse<Ite
             cb.setSellOut((int) items[7]);
             cb.setSequence((int) items[8]);
             cb.setSetMealFlg((int) items[9]);
-            cb.setIsMultiSelect((int) items[10]);
-            cb.setImgurl((String) items[11]);
+            cb.setEnableSize((int) items[10]);
+            cb.setIsMultiSelect((int) items[11]);
+            cb.setImgurl((String) items[12]);
             bean.getItemList().add(cb);
         }
 

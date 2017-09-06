@@ -59,6 +59,13 @@ public class ItemBean extends BaseHttpData {
     @SerializedName("isMultiSelect")
     private int isMultiSelect;
 
+    /**
+     * 是否有多规格
+     * 0没有 1启用
+     */
+    @SerializedName("enableSize")
+    private int enableSize;
+
     public long getId() {
         return id;
     }
@@ -153,5 +160,13 @@ public class ItemBean extends BaseHttpData {
 
     public void setIsMultiSelect(int isMultiSelect) {
         this.isMultiSelect = isMultiSelect;
+    }
+
+    public int getEnableSize() {
+        return enableSize;
+    }
+
+    public void setEnableSize(int enableSize) {
+        this.enableSize = enableSize;
     }
 }
