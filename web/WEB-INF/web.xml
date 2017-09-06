@@ -101,4 +101,13 @@
         <servlet-name>ItemUpdateServlet</servlet-name>
         <url-pattern>/itemupdate</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetPosServlet</servlet-name>
+        <servlet-class>com.app.buffet.GetPosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetPosServlet</servlet-name>
+        <url-pattern>/getpos</url-pattern>
+    </servlet-mapping>
 </web-app>
