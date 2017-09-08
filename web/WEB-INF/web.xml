@@ -110,4 +110,51 @@
         <servlet-name>GetPosServlet</servlet-name>
         <url-pattern>/getpos</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>paybar</servlet-name>
+        <servlet-class>com.app.buffet.ResultPayBar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>paybar</servlet-name>
+        <url-pattern>/CommPayBarCode.htm</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>paybarquery</servlet-name>
+        <servlet-class>com.app.buffet.PayBarQuery</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>paybarquery</servlet-name>
+        <url-pattern>/CommPayOrderQuery.htm</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>addorder</servlet-name>
+        <servlet-class>com.app.buffet.Addorder</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addorder</servlet-name>
+        <url-pattern>/addorder</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>gettoken</servlet-name>
+        <servlet-class>com.app.buffet.GetToken</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>gettoken</servlet-name>
+        <url-pattern>/gettoken</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>pay</servlet-name>
+        <servlet-class>com.app.buffet.Settle</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>pay</servlet-name>
+        <url-pattern>/pay</url-pattern>
+    </servlet-mapping>
+
 </web-app>
