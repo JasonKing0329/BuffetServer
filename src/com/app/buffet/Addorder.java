@@ -54,13 +54,10 @@ public class Addorder extends HttpServlet {
                 "                        \"count\": \"2\",\n" +
                 "                        \"price\": 15,\n" +
                 "                        \"totalPrice\": 30,\n" +
-                "                        \"size\": \"大份\",\n" +
+                "                        \"size\": \"\",\n" +
                 "                        \"methods\": [\n" +
                 "                            {\n" +
                 "                                \"name\": \"麻辣\"\n" +
-                "                            },\n" +
-                "                            {\n" +
-                "                                \"name\": \"不要酱油\"\n" +
                 "                            }\n" +
                 "                        ]\n" +
                 "                    },\n" +
