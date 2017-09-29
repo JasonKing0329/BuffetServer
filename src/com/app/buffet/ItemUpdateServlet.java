@@ -21,33 +21,46 @@ public class ItemUpdateServlet extends BaseJsonServlet<ItemUpdateRequest, Buffet
     @Override
     protected void onReceiveRequest(ItemUpdateRequest requestBean, HttpServletResponse resp) throws IOException {
         ItemUpdateResponse bean = new ItemUpdateResponse();
-        bean.setClearCode("1315466");
+        bean.setClearCode("asdgagasg");
         if (!requestBean.getClearCode().equals(bean.getClearCode())) {
             bean.setClearUpdateList(new ArrayList<>());
             ItemClearBean cb = new ItemClearBean();
-            cb.setId(400001);
-            cb.setSizeId(0);
+            cb.setId(200005);
+            cb.setSizeId(2000052);
             bean.getClearUpdateList().add(cb);
+//            cb = new ItemClearBean();
+//            cb.setId(200005);
+//            cb.setSizeId(2000051);
+//            bean.getClearUpdateList().add(cb);
+//            cb = new ItemClearBean();
+//            cb.setId(200001);
+//            cb.setSizeId(-1);
+//            bean.getClearUpdateList().add(cb);
         }
         bean.setLimitCode("15664");
         if (!requestBean.getLimitCode().equals(bean.getLimitCode())) {
             bean.setLimitUpdateList(new ArrayList<>());
             ItemLimitBean lb = new ItemLimitBean();
             lb.setId(100001);
-            lb.setSizeId(0);
+            lb.setSizeId(-1);
             lb.setLimit(10);
+            bean.getLimitUpdateList().add(lb);
+            lb = new ItemLimitBean();
+            lb.setId(200005);
+            lb.setSizeId(2000052);
+            lb.setLimit(3);
             bean.getLimitUpdateList().add(lb);
         }
         bean.setImgClassCode("15151");
         if (!requestBean.getImgClassCode().equals(bean.getImgClassCode())) {
             bean.setImgClassUpdateList(new ArrayList<>());
-            bean.getImgClassUpdateList().add(new IdBean(4));
+            bean.getImgClassUpdateList().add(new IdBean(3));
         }
         bean.setImgCode("5165");
         if (!requestBean.getImgCode().equals(bean.getImgCode())) {
             bean.setImgUpdateList(new ArrayList<>());
-            bean.getImgUpdateList().add(new IdBean(400001));
-            bean.getImgUpdateList().add(new IdBean(400002));
+            bean.getImgUpdateList().add(new IdBean(200001));
+            bean.getImgUpdateList().add(new IdBean(200002));
             bean.getImgUpdateList().add(new IdBean(300001));
         }
 

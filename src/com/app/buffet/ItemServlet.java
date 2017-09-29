@@ -30,7 +30,7 @@ public class ItemServlet extends BaseJsonServlet<BaseRequest, BuffetResponse<Ite
             cb.setUnitName((String) items[3]);
             cb.setPrice(ObjectFormatter.getDouble(items[4]));
             cb.setPriceVip(ObjectFormatter.getDouble(items[5]));
-            cb.setSellLimit(ObjectFormatter.getDouble(items[6]));
+            cb.setSellLimitMax(ObjectFormatter.getDouble(items[6]));
             cb.setSellOut((int) items[7]);
             cb.setSequence((int) items[8]);
             cb.setSetMealFlg((int) items[9]);

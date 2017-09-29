@@ -20,13 +20,14 @@ public class BasicDataServlet extends BaseJsonServlet<BaseRequest, BuffetRespons
     @Override
     protected void onReceiveRequest(BaseRequest requestBean, HttpServletResponse resp) throws IOException {
 
+
         BasicDataResponse bean = new BasicDataResponse();
 
         bean.setAddress("华苑产业园区榕苑路6号");
         bean.setDevCode("1001");
         bean.setVersion("165");
         bean.setType(1);
-        bean.setPayUrl("http://o2oapi.com");
+        bean.setPayUrl("http://cs.wuuxiang.com:666/api/tcsl/");
         bean.setId("5812");
         bean.setTel("13333333333");
         bean.setName("测试门店");

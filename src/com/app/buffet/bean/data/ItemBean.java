@@ -34,8 +34,8 @@ public class ItemBean extends BaseHttpData {
      * 限售数量
      * 不限售-1
      */
-    @SerializedName("sellLimit")
-    private double sellLimit = -1;
+    @SerializedName("sellLimitMax")
+    private double sellLimitMax = -1;
 
     /**
      * 沽清 0否 1是
@@ -122,12 +122,12 @@ public class ItemBean extends BaseHttpData {
         this.priceVip = priceVip;
     }
 
-    public double getSellLimit() {
-        return sellLimit;
+    public double getSellLimitMax() {
+        return sellLimitMax;
     }
 
-    public void setSellLimit(double sellLimit) {
-        this.sellLimit = sellLimit;
+    public void setSellLimitMax(double sellLimit) {
+        this.sellLimitMax = sellLimit;
     }
 
     public int getSellOut() {

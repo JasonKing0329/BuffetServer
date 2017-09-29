@@ -30,7 +30,7 @@ public class ItemSizeServlet extends BaseJsonServlet<BaseRequest, BuffetResponse
             cb.setIsDefault((int) items[3]);
             cb.setPrice(ObjectFormatter.getDouble(items[4]));
             cb.setSequence((int) items[5]);
-            cb.setLimit(ObjectFormatter.getDouble(items[6]));
+            cb.setSellLimit(ObjectFormatter.getDouble(items[6]));
             cb.setSellout((int) items[7]);
             bean.getItemSizeList().add(cb);
         }

@@ -21,11 +21,6 @@ public class PayBarQuery extends HttpServlet {
         PrintWriter writer = response.getWriter();
         time++;
         String str;
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         if(time<1) {
             str= "{\n" +
                     "  \"errorText\": \"成功\",\n" +

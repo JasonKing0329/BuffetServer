@@ -157,4 +157,13 @@
         <url-pattern>/pay</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>CheckOrderServlet</servlet-name>
+        <servlet-class>com.app.buffet.CheckOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckOrderServlet</servlet-name>
+        <url-pattern>/checkorder</url-pattern>
+    </servlet-mapping>
+
 </web-app>

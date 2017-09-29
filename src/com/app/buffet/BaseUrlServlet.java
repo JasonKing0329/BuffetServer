@@ -28,7 +28,7 @@ public class BaseUrlServlet extends HttpServlet {
 
     private void sendResponse(HttpServletResponse resp) throws IOException {
         BasicUrlResponse response = new BasicUrlResponse();
-        response.setUrl("192.168.9.206:8080/BuffetServer");
+        response.setUrl("/BuffetServer");
 
         BuffetResponse<BasicUrlResponse> responseBean = new BuffetResponse<>();
         responseBean.setResult(1);
