@@ -17,7 +17,7 @@ public class DocVersionServlet extends BaseJsonServlet<BaseRequest, BuffetRespon
     @Override
     protected void onReceiveRequest(BaseRequest requestBean, HttpServletResponse resp) throws IOException {
         DocVersionBean bean = new DocVersionBean();
-        bean.setVersion("1.1.8");
+        bean.setVersion("1.1.9");
         bean.setBgCode("123456");
         bean.setPromoteCode("123456");
         bean.setPromoteImageUrl("/img/promote/promote.jpg");
