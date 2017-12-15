@@ -21,16 +21,16 @@ public class ItemUpdateServlet extends BaseJsonServlet<ItemUpdateRequest, Buffet
     @Override
     protected void onReceiveRequest(ItemUpdateRequest requestBean, HttpServletResponse resp) throws IOException {
         ItemUpdateResponse bean = new ItemUpdateResponse();
-        bean.setClearCode("asdgagasg");
+        bean.setClearCode("1512");
         if (!requestBean.getClearCode().equals(bean.getClearCode())) {
-            bean.setClearUpdateList(new ArrayList<>());
-            ItemClearBean cb = new ItemClearBean();
-            cb.setId(200005);
-            cb.setSizeId(2000052);
-            bean.getClearUpdateList().add(cb);
+//            bean.setClearUpdateList(new ArrayList<>());
+//            ItemClearBean cb = new ItemClearBean();
+//            cb.setId(500001l);
+//            cb.setSizeId(-1);
+//            bean.getClearUpdateList().add(cb);
 //            cb = new ItemClearBean();
-//            cb.setId(200005);
-//            cb.setSizeId(2000051);
+//            cb.setId(500002l);
+//            cb.setSizeId(-1);
 //            bean.getClearUpdateList().add(cb);
 //            cb = new ItemClearBean();
 //            cb.setId(200001);

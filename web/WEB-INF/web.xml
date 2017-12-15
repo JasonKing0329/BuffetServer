@@ -32,7 +32,7 @@
 
     <servlet>
         <servlet-name>DocVersionServlet</servlet-name>
-        <servlet-class>com.app.buffet.DocVersionServlet</servlet-class>
+        <servlet-class>com.app.buffet.v1_2.DocVersionServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>DocVersionServlet</servlet-name>
@@ -164,6 +164,24 @@
     <servlet-mapping>
         <servlet-name>CheckOrderServlet</servlet-name>
         <url-pattern>/checkorder</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TestTest</servlet-name>
+        <servlet-class>com.app.buffet.TestTest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestTest</servlet-name>
+        <url-pattern>/test1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TestTest2</servlet-name>
+        <servlet-class>com.app.buffet.TestTest2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestTest2</servlet-name>
+        <url-pattern>/test2</url-pattern>
     </servlet-mapping>
 
 </web-app>

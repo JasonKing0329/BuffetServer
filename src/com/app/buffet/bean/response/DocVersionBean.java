@@ -1,6 +1,9 @@
 package com.app.buffet.bean.response;
 
+import com.app.buffet.bean.data.PromoteImageBean;
 import com.google.gson.annotations.SerializedName;
+
+import java.util.List;
 
 /**
  * 描述: docversion接口正常返回
@@ -14,6 +17,9 @@ public class DocVersionBean {
 
     @SerializedName("promoteImageUrl")
     private String promoteImageUrl;
+
+    @SerializedName("promoteImageUrlList")
+    private List<PromoteImageBean> promoteImageUrlList;
 
     @SerializedName("bgImageUrl")
     private String bgImageUrl;
@@ -38,6 +44,14 @@ public class DocVersionBean {
 
     public void setPromoteImageUrl(String promoteImageUrl) {
         this.promoteImageUrl = promoteImageUrl;
+    }
+
+    public List<PromoteImageBean> getPromoteImageUrlList() {
+        return promoteImageUrlList;
+    }
+
+    public void setPromoteImageUrlList(List<PromoteImageBean> promoteImageUrlList) {
+        this.promoteImageUrlList = promoteImageUrlList;
     }
 
     public String getBgImageUrl() {

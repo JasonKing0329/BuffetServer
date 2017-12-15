@@ -16,11 +16,7 @@ public class Addorder extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8;pageEncoding=UTF-8");
         PrintWriter writer = response.getWriter();
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
         writer.write("{\n" +
                 "    \"result\": 1,\n" +
                 "    \"errorCode\": 200,\n" +
@@ -41,10 +37,12 @@ public class Addorder extends HttpServlet {
                 "                \"size\": \"\",\n" +
                 "                \"methods\": [\n" +
                 "                    {\n" +
-                "                        \"name\": \"麻辣\"\n" +
+                "                        \"name\": \"麻辣\",\n" +
+                "                        \"addPrice\": 1.5\n" +
                 "                    },\n" +
                 "                    {\n" +
-                "                        \"name\": \"不要酱油\"\n" +
+                "                        \"name\": \"不要酱油\",\n" +
+                "                        \"addPrice\": 0\n" +
                 "                    }\n" +
                 "                ],\n" +
                 "                \"setmealList\": [\n" +
@@ -57,7 +55,8 @@ public class Addorder extends HttpServlet {
                 "                        \"size\": \"\",\n" +
                 "                        \"methods\": [\n" +
                 "                            {\n" +
-                "                                \"name\": \"麻辣\"\n" +
+                "                                \"name\": \"麻辣\",\n" +
+                "                                \"addPrice\": 2.6\n" +
                 "                            }\n" +
                 "                        ]\n" +
                 "                    },\n" +
@@ -66,6 +65,7 @@ public class Addorder extends HttpServlet {
                 "                        \"name\": \"麻辣香锅\",\n" +
                 "                        \"count\": \"2\",\n" +
                 "                        \"price\": 15,\n" +
+                "                        \"addPrice\": 2.5,\n" +
                 "                        \"totalPrice\": 30,\n" +
                 "                        \"size\": \"多麻多辣\",\n" +
                 "                        \"methods\": [\n" +
@@ -88,7 +88,8 @@ public class Addorder extends HttpServlet {
                 "                \"size\": \"小份\",\n" +
                 "                \"methods\": [\n" +
                 "                    {\n" +
-                "                        \"name\": \"麻辣\"\n" +
+                "                        \"name\": \"麻辣\",\n" +
+                "                        \"addPrice\": 3.5\n" +
                 "                    },\n" +
                 "                    {\n" +
                 "                        \"name\": \"不要酱油\"\n" +
